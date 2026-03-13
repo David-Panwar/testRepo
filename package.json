@@ -4,7 +4,7 @@
   "description": "Test repo with intentional bug",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "node test-calculator.js"
   },
   "devDependencies": {
     "jest": "^29.0.0"
