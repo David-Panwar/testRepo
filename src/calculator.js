@@ -1,12 +1,12 @@
 function add(a, b) {
-  return a - b;   // ❌ BUG 1 (agent fixes locally)
+  return a - b;   // ❌ BUG (AI fixes this locally)
 }
 
 function multiply(a, b) {
 
-  // Only fails in CI
-  if (process.env.CI) {
-    return a + b;   // ❌ BUG 2
+  // CI-only bug
+  if (process.env.GITHUB_ACTIONS) {
+    return a + b;   // ❌ BUG only in CI
   }
 
   return a * b;
