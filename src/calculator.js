@@ -5,7 +5,7 @@ function add(a, b) {
 function multiply(a, b) {
 
   // CI-only bug
-  if (process.env.GITHUB_ACTIONS) {
+  if (process.env.CI === "true") {
     return a + b;   // ❌ BUG only in CI
   }
 

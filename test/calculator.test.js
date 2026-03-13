@@ -6,4 +6,4 @@ test("addition works", () => {
 
 test("multiplication works", () => {
   expect(multiply(2, 3)).toBe(6);
-});
+}); 
