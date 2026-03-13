@@ -3,7 +3,7 @@ name: AI DevOps CI Pipeline
 on:
   push:
     branches:
-      - "ai-fix-*"
+      - "*"
   pull_request:
     branches:
       - main
