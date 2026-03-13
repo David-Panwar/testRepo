@@ -1,5 +1,9 @@
 function add(a, b) {
-  return a - b;   // ❌ BUG
+  return a - b;   // ❌ BUG 1
 }
 
-module.exports = { add };
+function multiply(a, b) {
+  return a + b;   // ❌ BUG 2
+}
+
+module.exports = { add, multiply };
